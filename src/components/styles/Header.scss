@@ -1,0 +1,84 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.header{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    &__spoon__img{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 16px;
+        height: 102px;
+        transform: translate(-50% ,50%);
+    }
+    
+    
+    &__container{
+        padding: 34px 53px 100px 65px !important;
+        @include df($direction:column);
+    }
+    
+    &__top__part{
+        width: 100%;
+        @include df($justify:space-between);
+        margin-bottom: 167px;
+    }
+    
+    &__logo__img{
+        width: 117px;
+        height: 106px;
+    }
+    
+    &__burger__img{
+        transform: scale(2.2);
+        color: $light;
+    }
+    
+    &__middle__part{
+        padding-left: 183px;
+        color: $light;
+        margin-bottom: 80px;
+        background-repeat: no-repeat;
+        background-size:64px 112px;
+        background-position: right top;
+    }
+    
+    &__middle__title{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: bolder;
+        margin-bottom: 2px;
+    }
+    
+    &__middle__heading{
+        font-size: 102px;
+        line-height: 106px;
+        font-weight: bolder;
+        max-width: 420px;
+        font-family: serif;
+        margin-bottom: 22px;
+    }
+    
+    &__middle__overview{
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.02px;
+        max-width: 280px;
+    }
+    
+    &__btn{
+        align-self: center;
+        width: 177px;
+        height: 44px;
+        background-color: transparent;
+        border: 1px solid $light;
+        font-size: 16px;
+        line-height: 21px;
+        color: $light;
+        font-weight: bold;
+    }
+}
